@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 03 - Bases de Datos</title>
+    <link rel="stylesheet" href="css/BD-Semanas.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="bg-animation"></div>
+    <header>
+        <div class="contenedorCabecera">
+            <button type="button" class="menu-button" aria-controls="sidebar" aria-expanded="false">☰</button>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo de la Universidad Peruana Los Andes">
+            </div>
+            <div class="titulo-container">
+                <h1 class="tituloPortafolio">Portafolio</h1>
+                <h5 class="nombre" aria-hidden="true">Valerio M.Z.</h5>
+            </div>
+            <div class="sobre-mi">
+                <nav>
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>    
+
+    <nav class="sidebar" id="sidebar">
+        <header class="contenedor-menu">
+            <h1>Menú</h1>
+            <button class="close-button" aria-controls="sidebar" aria-expanded="false">×</button>
+        </header>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#base-de-datos">Base de Datos II</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#unidad-1">Unidad I</a>
+                        <ul class="sub-submenu">
+                            <li><a href="BD-Semana01.html">Semana 01</a></li>
+                            <li><a href="BD-Semana02.html">Semana 02</a></li>
+                            <li><a href="BD-Semana03.html">Semana 03</a></li>
+                            <li><a href="BD-Semana04.html">Semana 04</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#unidad-2">Unidad II</a>
+                        <ul class="sub-submenu">
+                            <li><a href="BD-Semana05.html">Semana 05</a></li>
+                            <li><a href="BD-Semana06.html">Semana 06</a></li>
+                            <li><a href="BD-Semana07.html">Semana 07</a></li>
+                            <li><a href="BD-Semana08.html">Semana 08</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#unidad-3">Unidad III</a>
+                        <ul class="sub-submenu">
+                            <li><a href="BD-Semana09.html">Semana 09</a></li>
+                            <li><a href="BD-Semana10.html">Semana 10</a></li>
+                            <li><a href="BD-Semana11.html">Semana 11</a></li>
+                            <li><a href="BD-Semana12.html">Semana 12</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#unidad-4">Unidad IV</a>
+                        <ul class="sub-submenu">
+                            <li><a href="BD-Semana13.html">Semana 13</a></li>
+                            <li><a href="BD-Semana14.html">Semana 14</a></li>
+                            <li><a href="BD-Semana15.html">Semana 15</a></li>
+                            <li><a href="BD-Semana16.html">Semana 16</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#aplicaciones">Aplicaciones</a></li>
+            <li><a href="#otros-cursos">Otros Cursos</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor-breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="BD-Semana03.html">Semana 3</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="introduccion" class="fade-in" style="text-align: center;">
+            <h1 class="subTitulo">Semana 03</h1>
+        </section>        
+    
+        <hr class="section-divider">
+    
+        <section id="clases-y-actividades" class="fade-in">
+            <h2>Clases y Actividades</h2>
+            <p>Resumen de las clases y actividades clave del curso de Bases de Datos II. Cada sesión está 
+                diseñada para proporcionar un enfoque práctico y detallado de los conceptos fundamentales, 
+                aplicándolos a situaciones reales y casos de estudio</p>
+            <div class="card-deck">
+                <div class="card animate-entry">
+                    <img src="img/Clase.png" class="imagen-clase" alt="Clase 3: Modelo Entidad-Relación">
+                    <div class="card-body">
+                        <h5 class="card-title">Clase 3: Modelo Entidad-Relación</h5>
+                        <p class="card-text">En esta clase, aprendemos a diseñar modelos Entidad-Relación (ER) para bases de datos, aplicando estos conceptos a casos prácticos como proveedores y piezas, cadenas editoriales y empresas de material informático.</p>
+                        <a href="clases/Semana01-clase.html" class="button">Detalles de la Clase</a>
+                    </div>
+                </div>
+                <div class="card animate-entry">
+                    <img src="img/Trabajos.png" class="imagen-trabajo" alt="Actividad 3: Modelado Entidad-Relación">
+                    <div class="card-body">
+                        <h5 class="card-title">Actividad 3: Modelado Entidad-Relación</h5>
+                        <p class="card-text">Desarrollamos diagramas ER para gestionar la información sobre proveedores, productos de una cadena editorial y la venta de equipos informáticos, aplicando técnicas de modelado de bases de datos en escenarios reales.</p>
+                        <a href="actividades/Semana03-actividades.html" class="button">Detalles de la Actividad</a>
+                    </div>
+                </div>
+            </div>
+        </section>                
+        
+        <hr class="section-divider">
+        
+        <section id="pagnia-mobil" class="fade-in"> 
+            <h2>Repositorio en Hopp.bio</h2>
+            <div class="content-container">
+                <div class="description">
+                    <p>
+                        Escanea el código QR para acceder a la página donde subo las actividades y tareas semanales del curso de Base de Datos II. Allí encontrarás materiales útiles, fechas de entrega y más información relevante para tu aprendizaje.
+                    </p>
+                    <a href="https://www.hopp.bio/valerio" target="_blank" rel="noopener noreferrer" aria-label="Acceder a las actividades de Base de Datos II" class="button">Acceder a las actividades</a>
+                </div>
+                <figure class="image-png-container">
+                    <img src="img/HoppbioQR.png" alt="Código QR para acceder a las actividades" class="qr-image">
+                    <figcaption>Código QR para acceder a las actividades</figcaption>
+                </figure>
+                <figure class="image-gif-container">
+                    <img src="img/scanQR.gif" alt="Instrucciones para escanear" class="animated-gif">
+                    <figcaption>Instrucciones para escanear</figcaption>
+                </figure>
+            </div>
+        </section>               
+    
+        <hr class="section-divider">
+    
+        <section id="vista-previa" class="fade-in">
+            <h2>Vista previa a mi página web</h2>
+            <p>Explora el contenido que comparto en mi página Hopp.bio, donde encontrarás recursos, actividades y tareas semanales del curso de Base de Datos II. Accede a materiales útiles y mantente al tanto de las fechas de entrega para mejorar tu aprendizaje.</p>
+            <img src="ruta/a/tu/imagen.jpg" alt="Vista previa de la página Hopp.bio/Valerio" class="preview-image">
+            <br>
+            <br>
+            <a href="https://www.hopp.bio/valerio" target="_blank" aria-label="Acceder a las actividades de Base de Datos II" class="button">Visitar página web</a>
+        </section>                        
+    
+        <hr class="section-divider">
+    
+        <section id="contacto" class="fade-in">
+            <h2>Contacto</h2>
+            <p>Información sobre cómo contactarme para consultas o colaboraciones.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="contenedor-footer-redes">
+            <div class="footer-info">
+                <p>&copy; 2024 Mosquera Zevallos Valerio</p>
+                <p>Todos los derechos reservados</p>
+                <p>Elaboración propia</p>
+            </div>
+            <div class="footer-contact">
+                <p>Estudiante de la Universidad Peruana Los Andes</p>
+                <p>Correo institucional: <a href="mailto:r03398d@ms.upla.edu.pe">r03398d@ms.upla.edu.pe</a></p>
+                <p>Correo personal: <a href="mailto:mosqueravalerio10@gmail.com">mosqueravalerio10@gmail.com</a></p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/valerio-mosquera-4b7884329" target="_blank" rel="noopener noreferrer" class="text-white">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Vaalerio" target="_blank" rel="noopener noreferrer" class="text-white">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

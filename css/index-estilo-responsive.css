@@ -1,0 +1,103 @@
+/* -------------------- Estilos Responsivos -------------------- */
+
+/* Estilos generales para dispositivos móviles */
+body {
+    font-size: 16px; /* Tamaño de fuente base */
+}
+
+/* Header */
+header {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    padding: 10px;
+}
+
+.logo img {
+    width: 150px; /* Ajustar el tamaño del logo */
+}
+
+.titulo-container {
+    margin: 10px 0; /* Espaciado adicional */
+}
+
+/* Menu de navegación */
+.sobre-mi nav ul {
+    flex-direction: column; /* Cambiar a columna en móviles */
+}
+
+.sobre-mi nav ul li {
+    margin: 5px 0; /* Espaciado reducido */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 100%; /* Ancho completo en móviles */
+    left: -100%; /* Ocultar en móviles por defecto */
+}
+
+.sidebar.active {
+    left: 0; /* Mostrar cuando esté activo */
+}
+
+/* Main */
+main {
+    padding: 15px; /* Ajustar padding en móviles */
+}
+
+/* Secciones */
+.section-divider {
+    margin: 15px 0; /* Espaciado reducido */
+}
+
+/* Footer */
+footer {
+    flex-direction: column; /* Cambiar a columna en móviles */
+    text-align: center; /* Centrar el texto */
+}
+
+.footer-content {
+    margin: 10px 0; /* Espaciado entre elementos */
+}
+
+.redes-sociales {
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Media Queries para dispositivos mayores */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row; /* Volver a la fila */
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 300px; /* Ancho original */
+        left: -280px; /* Ocultar inicialmente */
+    }
+
+    .sobre-mi nav ul {
+        flex-direction: row; /* Mostrar en fila */
+    }
+
+    .sobre-mi nav ul li {
+        margin: 0 15px; /* Espaciado original */
+    }
+
+    main {
+        padding: 30px; /* Padding original */
+    }
+
+    footer {
+        flex-direction: row; /* Volver a fila */
+    }
+}
+
+/* Media Queries para pantallas muy grandes */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px; /* Aumentar tamaño de fuente en pantallas grandes */
+    }
+
+    .tituloPortafolio {
+        font-size: 3.5rem; /* Tamaño de fuente mayor */
+    }
+}

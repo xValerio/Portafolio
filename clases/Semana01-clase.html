@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 01 - Clase</title>
+    <link rel="stylesheet" href="../css/Clases-Trabajos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="bg-animation"></div>
+    <header>
+        <div class="contenedorCabecera">
+            <button type="button" class="menu-button" aria-controls="sidebar" aria-expanded="false">☰</button>
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo de la Universidad Peruana Los Andes">
+            </div>
+            <div class="titulo-container">
+                <h1 class="tituloPortafolio">Base de Datos</h1>
+                <h5 class="nombre" aria-hidden="true">Valerio M.Z.</h5>
+            </div>            
+            <div class="sobre-mi">
+                <nav>
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>                        
+        </div>
+    </header>
+
+    <nav class="sidebar" id="sidebar">
+        <header class="contenedor-menu">
+            <h1>Menú</h1>
+            <button class="close-button" aria-controls="sidebar" aria-expanded="false">×</button>
+        </header>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li>
+                <a href="#base-de-datos">Base de Datos II</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#unidad-1">Unidad I</a>
+                        <ul class="sub-submenu">
+                            <li><a href="../BD-Semana01.html">Semana 01</a></li>
+                            <li><a href="../BD-Semana02.html">Semana 02</a></li>
+                            <li><a href="../BD-Semana03.html">Semana 03</a></li>
+                            <li><a href="../BD-Semana04.html">Semana 04</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#unidad-2">Unidad II</a>
+                        <ul class="sub-submenu">
+                            <li><a href="../BD-Semana05.html">Semana 05</a></li>
+                            <li><a href="../BD-Semana06.html">Semana 06</a></li>
+                            <li><a href="../BD-Semana07.html">Semana 07</a></li>
+                            <li><a href="../BD-Semana08.html">Semana 08</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#unidad-3">Unidad III</a>
+                        <ul class="sub-submenu">
+                            <li><a href="../BD-Semana09.html">Semana 09</a></li>
+                            <li><a href="../BD-Semana10.html">Semana 10</a></li>
+                            <li><a href="../BD-Semana11.html">Semana 11</a></li>
+                            <li><a href="../BD-Semana12.html">Semana 12</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#unidad-4">Unidad IV</a>
+                        <ul class="sub-submenu">
+                            <li><a href="../BD-Semana13.html">Semana 13</a></li>
+                            <li><a href="../BD-Semana14.html">Semana 14</a></li>
+                            <li><a href="../BD-Semana15.html">Semana 15</a></li>
+                            <li><a href="../BD-Semana16.html">Semana 16</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#aplicaciones">Aplicaciones</a></li>
+            <li><a href="#otros-cursos">Otros Cursos</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor-breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="../BD-Semana01.html">Semana 1</a></li>
+            <li class="breadcrumb-item"><a href="Semana01-clase.html">Clase</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="introduccion" class="fade-in text-center">
+            <h1 class="subTitulo">Clase 1: Introducción a Bases de Datos</h1>
+        </section>
+
+        <section id="objetivo" class="fade-in">
+            <h2>Objetivo</h2>
+            <ul>
+                <li>Explicar qué es una base de datos.</li>
+                <li>Comprender qué es un gestor de base de datos.</li>
+                <li>Identificar las funciones de un Sistema Gestor de Base de Datos.</li>
+            </ul>
+        </section>
+    
+        <hr class="section-divider">
+    
+        <section id="contenido" class="fade-in">
+            <h2>Contenido</h2>
+            <ul>
+                <li><a href="#introduccion-teoria">Introducción</a></li>
+                <li><a href="#dato">Dato</a></li>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#informatica">Informática</a></li>
+                <li><a href="#base-de-datos">Base de datos</a></li>
+                <li><a href="#caracteristicas-base-datos">Características de una base de datos</a></li>
+                <li><a href="#sistema-gestor-base-datos">Sistema gestor de base de datos</a></li>
+                <li><a href="#funciones-sgbd">Funciones de un Sistema Gestor de Base de Datos</a></li>
+                <li><a href="#ventajas-sgbd">Ventajas de utilizar un Sistema Gestor de Base de Datos</a></li>
+            </ul>
+        </section>
+    
+        <hr class="section-divider">
+    
+        <section id="introduccion-teoria" class="fade-in">
+            <h2>Introducción</h2>
+            <p>La unidad didáctica de Base de Datos comprende los procesos necesarios para la implementación de bases de datos acorde a los requerimientos de la organización, considerando criterios de normalización, seguridad y ética profesional.</p>
+        </section>
+    
+        <section id="dato" class="fade-in image-container">
+            <h2>Dato</h2>
+            <img src="../img/dato.png" alt="Representación de un dato" class="dato-image">
+            <p>Un dato constituye un hecho o acontecimiento medido o registrado, es decir, la representación de algo que ocurre o la descripción de un objeto o de su estado. También, un dato es una representación formalizada de hechos, conceptos o instrucciones, adecuada para la comunicación, interpretación y procesamiento por medios humanos o automáticos.</p>
+        </section>        
+        
+        <section id="informacion" class="fade-in image-container">
+            <h2>Información</h2>
+            <img src="../img/informacion.jpg" alt="Representación de información" class="informacion-image">
+            <p>La información está constituida por un grupo de datos ya supervisados y ordenados, que sirven para construir un mensaje basado en un cierto fenómeno o ente. La información permite resolver problemas y tomar decisiones, ya que su aprovechamiento racional es la base del conocimiento.</p>
+        </section>        
+        
+        <section id="informatica" class="fade-in image-container">
+            <h2>Informática</h2>
+            <img src="../img/informatica.png" alt="Informática" class="informatica-image">
+            <p>Es una ciencia que estudia el tratamiento automático de la información. La información son los datos y el tratamiento automático de estos datos se hace mediante los sistemas informáticos, que son las computadoras.</p>
+        </section>
+        
+        <section id="base-de-datos" class="fade-in image-container"> 
+            <h2>Base de Datos</h2>
+            <p>Es un conjunto de información almacenada en una estructura de ficheros en disco, que será consultada y modificada por los usuarios que acceden a la misma, siendo el Sistema Gestor de Base de Datos (en adelante SGBD) el encargado de llevar físicamente a cabo estas operaciones.</p>
+            <img src="../img/base-de-datos.png" alt="base-de-datos" class="base-de-datos-image">
+        </section>
+        
+        <section id="caracteristicas" class="fade-in image-container">
+            <h2>Características de una base de datos</h2>
+            <ul>
+                <li>Independencia lógica y física de los datos.</li>
+                <li>Redundancia mínima.</li>
+                <li>Acceso concurrente por parte de múltiples usuarios.</li>
+                <li>Integridad de los datos.</li>
+                <li>Consultas complejas optimizadas.</li>
+                <li>Seguridad de acceso y auditoría.</li>
+                <li>Respaldo y recuperación.</li>
+            </ul>
+            <img src="../img/caracteristicas.png" alt="caracteristicas" class="caracteristicas-image">
+        </section>
+        
+        <section id="diferencias" class="fade-in image-container">
+            <h2>¿En qué se diferencia una Base de Datos de los archivos tradicionales?</h2>
+            <p>Una base de datos es un archivo, existen diferentes tipos de archivos, como de texto, imágenes, pistas de audio, video, entre otras, junto con los archivos de bases de datos. Cada tipo de archivo tiene sus características únicas que los diferencian y programas específicos que nos permiten hacer uso de ellos. En el caso de las bases de datos, tienen una estructura organizacional que permite contener de forma ordenada datos de diferentes tipos...</p>
+            <img src="../img/diferencias.png" alt="diferencias" class="diferencias-image">
+        </section>
+        
+        <section id="sgbd" class="fade-in image-container">
+            <h2>Sistema Gestor de Datos</h2>
+            <p>El Sistema Gestor de Bases de Datos (SGBD) es un software que proporciona servicios para la creación, el almacenamiento, el procesamiento y la consulta de la información almacenada en base de datos de forma segura y eficiente.</p>
+            <img src="../img/sgbd.png" alt="sgbd" class="sgbd-image">
+        </section>
+        
+        <section id="funciones-sgbd" class="fade-in image-container">
+            <h2>Funciones de un Sistema Gestor de Base de Datos</h2>
+            <p>Los SGBD pueden considerarse como intermediarios entre las aplicaciones y la representación de los datos, proporcionando independencia de los datos y las aplicaciones.</p>
+            <h6>Niveles:</h6>
+            <ul>
+                <li>Físico</li>
+                <li>Lógico</li>
+                <li>Vistas</li>
+            </ul>
+            <img src="../img/funciones-sgbd.png" alt="funciones-sgbd" class="funciones-sgbd-image">
+        </section>
+        
+        <section id="ventajas-sgbd" class="fade-in image-container">
+            <h2>Ventajas de utilizar un Sistema Gestor de Base de Datos</h2>
+            <ol>
+                <li>Seguridad de los datos</li>
+                <li>Control o manipulación de datos</li>
+                <li>Actualización de los datos en línea</li>
+                <li>Reducción de tiempos</li>
+                <li>Mantener organización coherente de los datos</li>
+                <li>Simplificación del trabajo</li>
+                <li>Generación de informes a partir de los datos</li>
+                <li>Accesos concurrentes a las BD</li>
+            </ol>
+            <img src="../img/ventajas-sgbd.png" alt="ventajas-sgbd" class="ventajas-sgbd-image">
+        </section>        
+
+        <div class="video-container">
+            <h2>Video de Introducción a Bases de Datos</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/X7v0O8yiUuY"
+                title="Video de Introducción a Bases de Datos" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                style="display: block; margin: auto; margin-top: 20px;">
+            </iframe>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="contenedor-footer-redes">
+            <div class="footer-info">
+                <p>&copy; 2024 Mosquera Zevallos Valerio</p>
+                <p>Todos los derechos reservados</p>
+                <p>Elaboración propia</p>
+            </div>
+            <div class="footer-contact">
+                <p>Estudiante de la Universidad Peruana Los Andes</p>
+                <p>Correo institucional: <a href="mailto:r03398d@ms.upla.edu.pe">r03398d@ms.upla.edu.pe</a></p>
+                <p>Correo personal: <a href="mailto:mosqueravalerio10@gmail.com">mosqueravalerio10@gmail.com</a></p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/valerio-mosquera-4b7884329" target="_blank" rel="noopener noreferrer" class="text-white">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Vaalerio" target="_blank" rel="noopener noreferrer" class="text-white">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
